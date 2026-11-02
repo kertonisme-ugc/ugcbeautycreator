@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio UGC & beauty content creator Vero (@kertonisme), Indonesia.">
+<title>Vero UGC Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=DM+Mono:wght@400;500&family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+--bg:#FBF5F8;
+--surface:#FFFFFF;
+--glass:rgba(255,255,255,.62);
+--glass-line:rgba(255,255,255,.9);
+--ink:#2B1622;
+--muted:#7A6470;
+--line:#ECDDE4;
+--glaze:#B02A62;
+--glaze-soft:#F8E3EC;
+--on-glaze:#FFFFFF;
+--aura-1:#F6C3D6;
+--aura-2:#DDD0F6;
+--aura-3:#FCD9C4;
+--cap-bg:#FFFFFF;
+--cap-fg:#21101A;
+--sheen:rgba(255,255,255,.55);
+--shadow:0 22px 48px -22px rgba(92,28,58,.38);
+--shadow-soft:0 10px 30px -18px rgba(92,28,58,.28);
+--grain:.05;
+--mk-1:#F7B6CB; --mk-2:#B8215A;
+--hr-1:#F4DDB0; --hr-2:#B47A34;
+--sk-1:#E6E1F7; --sk-2:#86B3C7;
+--lf-1:#F9CDB0; --lf-2:#86A68E;
+--f-display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+--f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+--f-mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]){
+--bg:#140A10; --surface:#1E1219; --glass:rgba(38,21,31,.58); --glass-line:rgba(255,255,255,.08);
+--ink:#F7EAF0; --muted:#B89FAB; --line:#3A2430;
+--glaze:#F27BA6; --glaze-soft:#37182A; --on-glaze:#1A0A11;
+--aura-1:#5B1D3A; --aura-2:#2F2654; --aura-3:#4B2A22;
+--cap-bg:#FFFFFF; --cap-fg:#21101A; --sheen:rgba(255,255,255,.3);
+--shadow:0 22px 48px -22px rgba(0,0,0,.8); --shadow-soft:0 10px 30px -18px rgba(0,0,0,.7);
+--grain:.07;
+--mk-1:#E58AAB; --mk-2:#7A1238; --hr-1:#D9B676; --hr-2:#6E4519;
+--sk-1:#A9A2D6; --sk-2:#2F5E73; --lf-1:#E0A07A; --lf-2:#3F5E48;
+color-scheme:dark;
+}
+}
+:root[data-theme="dark"]{
+--bg:#140A10; --surface:#1E1219; --glass:rgba(38,21,31,.58); --glass-line:rgba(255,255,255,.08);
+--ink:#F7EAF0; --muted:#B89FAB; --line:#3A2430;
+--glaze:#F27BA6; --glaze-soft:#37182A; --on-glaze:#1A0A11;
+--aura-1:#5B1D3A; --aura-2:#2F2654; --aura-3:#4B2A22;
+--cap-bg:#FFFFFF; --cap-fg:#21101A; --sheen:rgba(255,255,255,.3);
+--shadow:0 22px 48px -22px rgba(0,0,0,.8); --shadow-soft:0 10px 30px -18px rgba(0,0,0,.7);
+--grain:.07;
+--mk-1:#E58AAB; --mk-2:#7A1238; --hr-1:#D9B676; --hr-2:#6E4519;
+--sk-1:#A9A2D6; --sk-2:#2F5E73; --lf-1:#E0A07A; --lf-2:#3F5E48;
+color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:40;opacity:var(--grain);
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--glaze);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1200px;margin-inline:auto;padding-left:max(clamp(16px,4vw,40px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,40px),env(safe-area-inset-right,0px))}
+section{scroll-margin-top:76px}
+.block{padding-block:clamp(72px,10vw,128px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--glaze)}
+h1,h2,h3{margin:0;color:var(--ink)}
+h1,h2{font-family:var(--f-display);font-weight:500;letter-spacing:-.02em;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--glaze);font-weight:500}
+h2{font-size:clamp(34px,4.6vw,58px);line-height:1.06}
+h3{font-family:var(--f-body)}
+.sec-head{display:grid;gap:16px;max-width:780px;margin-bottom:clamp(32px,4.5vw,56px)}
+.sec-head .sub{color:var(--muted);margin:0;max-width:60ch}
+.ico{display:inline-grid;place-items:center;line-height:1}
+.ico svg{width:1em;height:1em}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 78%,transparent);-webkit-backdrop-filter:saturate(1.3) blur(14px);backdrop-filter:saturate(1.3) blur(14px);border-bottom:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.top .wrap{display:flex;align-items:center;gap:20px;padding-block:12px}
+.wordmark{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.wordmark b{font-family:var(--f-display);font-style:italic;font-weight:600;font-size:30px;letter-spacing:-.02em;line-height:1}
+.wordmark b i{font-style:normal;color:var(--glaze)}
+.wordmark span{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:15px}
+.nav a:hover{color:var(--glaze)}
+.top-right{display:flex;align-items:center;gap:10px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--glass)}
+.lang button{font:500 12.5px var(--f-mono);letter-spacing:.08em;min-width:40px;min-height:32px;border:0;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 24px;border-radius:999px;font:650 15.5px var(--f-body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--glaze);color:var(--on-glaze);box-shadow:var(--shadow-soft)}
+.btn-ghost{background:var(--glass);border-color:var(--line);color:var(--ink);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.btn-sm{min-height:40px;padding:0 16px;font-size:14px}
+@media (max-width:760px){
+.nav{display:none}
+.top-right{margin-left:auto}
+.wordmark span{display:none}
+}
+@media (max-width:380px){ .top .btn-sm{display:none} }
+.aura{position:relative;isolation:isolate;overflow-x:clip}
+.aura::before{content:"";position:absolute;inset:-10% -5% 0;z-index:-1;pointer-events:none;filter:blur(30px);
+background:
+radial-gradient(38% 48% at 74% 38%,var(--aura-1) 0%,transparent 70%),
+radial-gradient(30% 40% at 94% 78%,var(--aura-2) 0%,transparent 72%),
+radial-gradient(34% 44% at 8% 90%,var(--aura-3) 0%,transparent 72%),
+radial-gradient(26% 34% at 30% 8%,var(--aura-2) 0%,transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,5vw,80px);align-items:center;padding-block:clamp(44px,7vw,100px) clamp(64px,8vw,112px)}
+.hero h1{font-size:clamp(44px,6.6vw,88px);line-height:1.02;margin-top:22px}
+.lede{font-size:clamp(17px,1.6vw,19.5px);color:var(--muted);max-width:44ch;margin:24px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 0;padding:0;list-style:none}
+.chips li{font-size:13.5px;font-weight:600;padding:7px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.hero-visual{position:relative;display:grid;justify-items:center;gap:22px;min-width:0}
+.stack{display:flex;justify-content:center;align-items:center;padding-block:24px 32px}
+.stack .frame{flex:0 0 auto;width:clamp(122px,16vw,214px);animation:float 7s ease-in-out infinite}
+.stack .frame:nth-child(1){transform:rotate(-7deg) translateY(22px);margin-right:-30px;z-index:1;animation-delay:-2s}
+.stack .frame:nth-child(2){transform:translateY(-8px);z-index:3}
+.stack .frame:nth-child(3){transform:rotate(6deg) translateY(26px);margin-left:-30px;z-index:2;animation-delay:-4.5s}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.sticker{position:absolute;top:4%;right:4%;z-index:5;transform:rotate(8deg);font-family:var(--f-display);font-style:italic;font-weight:600;font-size:clamp(14px,1.5vw,18px);padding:8px 16px;border-radius:999px;background:var(--surface);color:var(--glaze);box-shadow:var(--shadow-soft);border:1px solid var(--line);white-space:nowrap}
+.stack-note{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0}
+@media (max-width:860px){
+.hero .wrap{grid-template-columns:1fr}
+.sticker{right:2%;top:0}
+}
+.frame{position:relative;display:flex;flex-direction:column;justify-content:space-between;aspect-ratio:9/16;max-width:100%;border-radius:22px;overflow:hidden;padding:11px;color:var(--cap-fg);text-decoration:none;box-shadow:var(--shadow);container-type:inline-size;isolation:isolate;
+background:
+radial-gradient(90% 55% at 22% 12%,color-mix(in srgb,var(--c1) 50%,var(--cap-bg)) 0%,transparent 62%),
+radial-gradient(85% 70% at 88% 96%,var(--c2) 0%,transparent 72%),
+linear-gradient(165deg,var(--c1) 8%,var(--c2) 100%);
+background-size:150% 150%;background-position:0% 0%}
+.frame::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1px solid rgba(255,255,255,.35);pointer-events:none;z-index:4}
+.cat-makeup{--c1:var(--mk-1);--c2:var(--mk-2)}
+.cat-hair{--c1:var(--hr-1);--c2:var(--hr-2)}
+.cat-skin{--c1:var(--sk-1);--c2:var(--sk-2)}
+.cat-life{--c1:var(--lf-1);--c2:var(--lf-2)}
+.frame::after{content:"";position:absolute;inset:-10% -60%;background:linear-gradient(105deg,transparent 42%,var(--sheen) 50%,transparent 58%);transform:translateX(-100%);pointer-events:none;z-index:2}
+.stack .frame::after{animation:sheen 1.6s cubic-bezier(.3,.6,.3,1) .5s 1 both}
+.stack .frame:nth-child(1)::after{animation-delay:.8s}
+.stack .frame:nth-child(3)::after{animation-delay:1.1s}
+@keyframes sheen{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.f-top{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:6px;font-family:var(--f-mono);font-size:10px;font-size:clamp(8.5px,5.4cqi,11.5px);letter-spacing:.02em}
+.f-top .handle{display:inline-flex;align-items:center;gap:4px;background:color-mix(in srgb,var(--cap-bg) 82%,transparent);color:var(--cap-fg);padding:3px 8px;border-radius:999px;white-space:nowrap;overflow:hidden;min-width:0}
+.f-top .badge{background:var(--cap-fg);color:var(--cap-bg);padding:3px 8px;border-radius:999px;white-space:nowrap}
+.play{position:relative;z-index:3;align-self:center;display:grid;place-items:center;width:38px;width:clamp(28px,19cqi,48px);aspect-ratio:1;border-radius:50%;background:color-mix(in srgb,var(--cap-bg) 72%,transparent);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font-size:12px;font-size:clamp(9px,5.6cqi,15px)}
+.play::before{content:"";border-style:solid;border-width:.5em 0 .5em .82em;border-color:transparent transparent transparent var(--cap-fg);margin-left:.2em}
+.cap{position:relative;z-index:3;margin:0 0 14px;text-align:center;font-family:var(--f-body);font-weight:800;font-size:13px;font-size:clamp(11px,6.8cqi,18px);line-height:1.55;overflow-wrap:anywhere}
+.cap span{background:var(--cap-bg);color:var(--cap-fg);padding:.14em .44em;border-radius:.38em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.bar{position:absolute;left:12px;right:12px;bottom:9px;height:3px;border-radius:3px;background:color-mix(in srgb,var(--cap-bg) 40%,transparent);z-index:3;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--cap-bg);border-radius:inherit}
+.playing .frame{animation:drift 8s ease-in-out infinite alternate}
+.playing .bar i{animation:prog 8s linear infinite}
+.playing .frame::after{animation:sheen 1.4s cubic-bezier(.3,.6,.3,1) 1 both}
+.playing .play::before{border:0;width:.26em;height:.9em;background:var(--cap-fg);box-shadow:.44em 0 0 var(--cap-fg);margin-left:-.44em}
+.playing .play{animation:fadePlay 8s ease-in-out infinite}
+@keyframes drift{from{background-position:0% 0%}to{background-position:100% 100%}}
+@keyframes prog{from{width:0}to{width:100%}}
+@keyframes fadePlay{0%,12%{opacity:1}22%,100%{opacity:0}}
+.stats{position:relative;z-index:2;margin-top:clamp(-40px,-4vw,-24px)}
+.stat-card{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px 20px;padding:clamp(24px,3.5vw,40px);border-radius:28px;background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);box-shadow:var(--shadow-soft)}
+.stat{min-width:0}
+.stat .num{font-family:var(--f-display);font-weight:500;font-size:clamp(34px,4.4vw,56px);letter-spacing:-.02em;line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.stat .num small{font-size:.55em;color:var(--glaze);margin-left:2px;font-style:italic}
+.stat .lbl{font-size:13.5px;color:var(--muted);margin-top:10px;line-height:1.4}
+.stat-note{grid-column:1/-1;font-family:var(--f-mono);font-size:11.5px;color:var(--muted);margin:4px 0 0;padding-top:18px;border-top:1px solid var(--line);letter-spacing:.02em}
+@media (max-width:760px){
+.stat-card{grid-template-columns:repeat(6,minmax(0,1fr))}
+.stat:nth-child(-n+2){grid-column:span 3}
+.stat:nth-child(n+3){grid-column:span 2}
+}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:start}
+.about-copy{display:grid;gap:20px;min-width:0}
+.about-copy p{margin:0;max-width:54ch}
+.about-copy p.first{font-family:var(--f-display);font-size:clamp(20px,2vw,25px);line-height:1.45;color:var(--ink)}
+.points{list-style:none;margin:0;padding:0;display:grid;gap:12px;min-width:0}
+.points li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 16px;padding:20px 22px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.points .sw{grid-row:span 2;width:14px;height:14px;margin-top:6px;border-radius:50%;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.points h3{font-weight:700;font-size:17.5px;letter-spacing:-.005em}
+.points p{margin:0;color:var(--muted);font-size:15.5px}
+@media (max-width:820px){ .about-grid{grid-template-columns:1fr} }
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--glass);color:var(--ink);font:600 14.5px var(--f-body);cursor:pointer}
+.chip .count{font:500 11.5px var(--f-mono);color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.chip[aria-pressed="true"] .count{color:var(--bg);opacity:.75}
+.work-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(28px,3.4vw,44px) clamp(14px,2vw,26px)}
+@media (max-width:1000px){ .work-grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:700px){ .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+.work{display:flex;flex-direction:column;gap:16px;min-width:0}
+.work .frame{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.work:hover .frame{transform:translateY(-6px) rotate(-.6deg)}
+.work-meta{display:grid;gap:2px;min-width:0}
+.work-meta .fmt{font-family:var(--f-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--glaze);margin:0 0 6px}
+.work-meta h3{font-family:var(--f-display);font-weight:600;font-size:21px;line-height:1.2;letter-spacing:-.01em}
+.work-meta .prod{margin:0;font-size:14px;color:var(--muted);line-height:1.4}
+.work-meta .watch{justify-self:start;display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;font-size:14px;text-decoration:none;border-bottom:1px solid var(--glaze);padding-bottom:1px}
+.work-meta .watch:hover{color:var(--glaze)}
+.brands{border-block:1px solid var(--line);background:var(--glass)}
+.brands .wrap.head{padding-top:clamp(64px,8vw,104px)}
+.marquee{overflow:hidden;padding-block:6px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee + .marquee{margin-top:4px}
+.track{display:flex;width:max-content;animation:scroll 46s linear infinite}
+.marquee.rev .track{animation-direction:reverse;animation-duration:52s}
+.marquee:hover .track{animation-play-state:paused}
+.track ul{display:flex;list-style:none;margin:0;padding:0}
+.track li{display:flex;align-items:center;white-space:nowrap;font-family:var(--f-display);font-weight:500;font-size:clamp(28px,4vw,52px);line-height:1.3;letter-spacing:-.015em;padding-right:.6em}
+.track li:nth-child(even){font-style:italic;color:var(--muted)}
+.track li::after{content:"✦";font-style:normal;font-size:.4em;color:var(--glaze);margin-left:.6em}
+.brands .pad-b{padding-bottom:clamp(64px,8vw,104px)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.svc{display:flex;flex-direction:column;gap:14px;padding:30px;background:var(--glass);border:1px solid var(--glass-line);border-radius:26px;min-width:0;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:var(--shadow-soft)}
+.svc .swatch{width:52px;height:52px;border-radius:50%;background:radial-gradient(60% 60% at 30% 28%,color-mix(in srgb,var(--c1) 45%,var(--cap-bg)),transparent 70%),linear-gradient(140deg,var(--c1),var(--c2));box-shadow:inset 0 -6px 12px rgba(0,0,0,.12)}
+.svc .spec{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;color:var(--glaze);margin:0}
+.svc h3{font-family:var(--f-display);font-weight:600;font-size:28px;letter-spacing:-.015em;line-height:1.15}
+.svc p.d{margin:0;color:var(--muted);font-size:15.5px}
+.addons{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:28px}
+.addons .eyebrow{margin-right:6px}
+.addons span.pill{font-size:13.5px;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--glass)}
+.svc-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:30px;padding-top:26px;border-top:1px solid var(--line)}
+.svc-foot p{margin:0;color:var(--muted);max-width:58ch}
+@media (max-width:900px){ .svc-grid{grid-template-columns:1fr} }
+.timeline{position:relative;list-style:none;margin:0;padding:36px 0 0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px}
+.timeline::before{content:"";position:absolute;left:0;right:0;top:10px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--glaze),color-mix(in srgb,var(--glaze) 25%,var(--line)))}
+.timeline li{position:relative;display:grid;gap:6px;min-width:0}
+.timeline li::before{content:"";position:absolute;top:-34px;left:0;width:20px;height:20px;border-radius:50%;background:var(--bg);border:3px solid var(--glaze)}
+.timeline .n{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;color:var(--muted)}
+.timeline h3{font-family:var(--f-display);font-weight:600;font-size:21px;letter-spacing:-.01em}
+.timeline p{margin:0;color:var(--muted);font-size:15px}
+.proc-time{font-family:var(--f-mono);font-size:12px;letter-spacing:.03em;color:var(--muted);margin:34px 0 0}
+@media (max-width:820px){
+.timeline{grid-template-columns:1fr;padding:0 0 0 40px;gap:28px}
+.timeline::before{left:8px;right:auto;top:6px;bottom:6px;width:3px;height:auto;background:linear-gradient(180deg,var(--glaze),color-mix(in srgb,var(--glaze) 25%,var(--line)))}
+.timeline li::before{top:2px;left:-40px}
+}
+.contact h2{font-size:clamp(40px,6vw,76px);line-height:1.04}
+.links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.link-card{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);text-decoration:none;min-width:0;transition:transform .2s ease,border-color .2s ease}
+.link-card:hover{transform:translateY(-3px);border-color:var(--glaze)}
+.link-card .ico{flex:0 0 auto;width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--bg);font-size:20px}
+.link-card .lc{display:grid;min-width:0;flex:1 1 auto}
+.link-card .lc-label{font-size:13px;color:var(--muted)}
+.link-card .lc-handle{font-family:var(--f-body);font-weight:600;font-size:15px;letter-spacing:0;overflow-wrap:anywhere}
+.link-card .arrow{font-size:18px;color:var(--glaze);flex:0 0 auto}
+.email-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:14px;padding:16px 20px;border-radius:20px;background:var(--glass);border:1px solid var(--glass-line)}
+.email-row .addr{font-family:var(--f-display);font-weight:600;font-size:20px;user-select:all;overflow-wrap:anywhere;min-width:0;flex:1 1 auto}
+@media (max-width:900px){ .links{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .links{grid-template-columns:1fr} }
+.foot{border-top:1px solid var(--line)}
+.foot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;padding-block:28px;font-size:14px;color:var(--muted)}
+.socials{display:flex;gap:8px}
+.socials a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);color:var(--ink);font-size:16px;text-decoration:none;transition:background-color .2s ease,color .2s ease}
+.socials a:hover{background:var(--ink);color:var(--bg)}
+@media (prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+.frame::after{display:none}
+.stack .frame,.playing .frame,.playing .play,.playing .bar i{animation:none}
+.track{animation:none;flex-wrap:wrap;width:auto}
+.track ul + ul{display:none}
+.track ul{flex-wrap:wrap}
+.btn,.link-card,.work .frame{transition:none}
+.btn:hover,.link-card:hover,.work:hover .frame{transform:none}
+}
+</style>
+</head>
+<body>
+<header class="top">
+<div class="wrap">
+<a class="wordmark" href="#top" aria-label="Vero, UGC creator"><b>vero<i>.</i></b><span>UGC creator</span></a>
+<nav class="nav" aria-label="Menu">
+<a href="#work" data-i18n="nav.work">Karya</a>
+<a href="#services" data-i18n="nav.services">Layanan</a>
+<a href="#contact" data-i18n="nav.contact">Kontak</a>
+</nav>
+<div class="top-right">
+<div class="lang" role="group" aria-label="Language">
+<button type="button" id="lang-id" data-lang="id" aria-pressed="true">ID</button>
+<button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+</div>
+<a class="btn btn-primary btn-sm" href="#contact" data-i18n="cta.collab">Kerja sama</a>
+</div>
+</div>
+</header>
+<main id="top">
+<section class="hero aura" aria-labelledby="hero-title">
+<div class="wrap">
+<div>
+<p class="eyebrow" data-i18n="hero.eyebrow">Portfolio · Indonesia</p>
+<h1 id="hero-title" data-i18n-html="hero.title">UGC &amp; <em>Beauty</em> Content Creator</h1>
+<p class="lede" data-i18n="hero.sub">Konten beauty, haircare, dan lifestyle dari kreator yang benar-benar memakai produknya. Aku tulis, rekam, dan edit sendiri, siap dipakai di akun dan iklan brand kamu.</p>
+<div class="actions">
+<a class="btn btn-primary" href="#work" data-i18n="hero.cta1">Lihat karya</a>
+<a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Minta rate card</a>
+</div>
+<ul class="chips">
+<li>Makeup</li><li>Skincare</li><li>Haircare</li>
+<li data-i18n="chip.life">Lifestyle &amp; kuliner</li>
+<li data-i18n="chip.lang">Indonesia + English</li>
+</ul>
+</div>
+<div class="hero-visual">
+<span class="sticker" aria-hidden="true">honest review ♡</span>
+<div class="stack">
+<a class="frame cat-hair" href="https://www.tiktok.com/@kertonisme/video/7697635086262455570" target="_blank" rel="noopener" aria-label="L'Oréal Professionnel — TikTok">
+<span class="f-top"><span class="handle"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>@kertonisme</span></span>
+<span class="play" aria-hidden="true"></span>
+<p class="cap"><span>Anti rambut frizzy seminggu ✅</span></p>
+</a>
+<a class="frame cat-makeup" href="https://www.tiktok.com/@kertonisme/video/7681520203359915271" target="_blank" rel="noopener" aria-label="Make Over — TikTok, 4.9K views">
+<span class="f-top"><span class="handle"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>@kertonisme</span><span class="badge">4.9K views</span></span>
+<span class="play" aria-hidden="true"></span>
+<p class="cap"><span>Definisi powerstay banget. Siapa sangka bakal seawet itu</span></p>
+</a>
+<a class="frame cat-skin" href="https://www.tiktok.com/@kertonisme/video/7700956391615483154" target="_blank" rel="noopener" aria-label="Beauty of Joseon — TikTok">
+<span class="f-top"><span class="handle"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>@kertonisme</span></span>
+<span class="play" aria-hidden="true"></span>
+<p class="cap"><span>Pengalaman sebagai acne prone</span></p>
+</a>
+</div>
+<p class="stack-note" data-i18n="hero.note">Hook asli dari video brand</p>
+</div>
+</div>
+</section>
+<section class="stats" aria-label="Statistik">
+<div class="wrap">
+<div class="stat-card">
+<div class="stat"><div class="num">9.5K</div><div class="lbl" data-i18n="stats.followers">Followers TikTok</div></div>
+<div class="stat"><div class="num">1.3M<small>+</small></div><div class="lbl" data-i18n="stats.likes">Total likes akun</div></div>
+<div class="stat"><div class="num">19.6K</div><div class="lbl" data-i18n="stats.views">Views · 90 hari terakhir</div></div>
+<div class="stat"><div class="num">3.4%</div><div class="lbl" data-i18n="stats.er">Engagement rate · 90 hari</div></div>
+<div class="stat"><div class="num">16</div><div class="lbl" data-i18n="stats.brands">Brand dalam 3 bulan terakhir</div></div>
+<p class="stat-note" data-i18n="stats.note">Data TikTok @kertonisme dari Metricool, 4 Agustus – 1 November 2026.</p>
+</div>
+</div>
+</section>
+<section id="about" aria-labelledby="about-title">
+<div class="wrap block">
+<div class="about-grid">
+<div class="about-copy">
+<p class="eyebrow" data-i18n="about.eyebrow">Tentang aku</p>
+<h2 id="about-title" data-i18n-html="about.title">Halo, aku <em>Vero.</em></h2>
+<p class="first" data-i18n="about.body1">Aku Vero, UGC creator dari Indonesia. Videoku menjawab hal yang ingin diketahui calon pembeli: enak dipakai atau nggak, hasilnya kelihatan atau nggak, dan cocok buat siapa.</p>
+</div>
+<ul class="points">
+<li><span class="sw cat-makeup" aria-hidden="true"></span><h3 data-i18n="p1.t">Review dari masalah nyata</h3><p data-i18n="p1.d">Kulitku acne-prone dan rambutku sering dicatok. Aku tahu rasanya mencari produk yang benar-benar berhasil.</p></li>
+<li><span class="sw cat-skin" aria-hidden="true"></span><h3 data-i18n="p2.t">Terbiasa kerja dengan brief</h3><p data-i18n="p2.d">Aku teliti soal guideline brand, key message, dan deadline.</p></li>
+<li><span class="sw cat-hair" aria-hidden="true"></span><h3 data-i18n="p3.t">Dua bahasa</h3><p data-i18n="p3.d">Script bahasa Indonesia, English, atau campuran keduanya.</p></li>
+<li><span class="sw cat-life" aria-hidden="true"></span><h3 data-i18n="p4.t">Tampil wajah atau faceless</h3><p data-i18n="p4.d">Talking to camera, voice-over, atau close-up produk tanpa wajah.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="work" aria-labelledby="work-title">
+<div class="wrap block" style="padding-top:0">
+<div class="sec-head">
+<p class="eyebrow" data-i18n="work.eyebrow">Karya pilihan</p>
+<h2 id="work-title" data-i18n-html="work.title">Konten yang sudah <em>tayang</em></h2>
+<p class="sub" data-i18n="work.sub">Ketuk video untuk menonton di TikTok. Teks di layar diambil dari caption asli tiap video.</p>
+</div>
+<div class="filters" id="filters" role="group" aria-label="Filter"></div>
+<div class="work-grid" id="work-grid"></div>
+</div>
+</section>
+<section class="brands" aria-labelledby="brands-title">
+<div class="wrap head">
+<div class="sec-head">
+<p class="eyebrow" data-i18n="brands.eyebrow">Brand</p>
+<h2 id="brands-title" data-i18n-html="brands.title">Brand yang pernah aku <em>buatkan konten</em></h2>
+</div>
+</div>
+<div class="marquee">
+<div class="track">
+<ul><li>Pantene</li><li>Make Over</li><li>L'Oréal Professionnel</li><li>Beauty of Joseon</li><li>Aurevon</li><li>Aurevante</li><li>Milittle Things</li><li>EasyDew</li></ul>
+<ul aria-hidden="true"><li>Pantene</li><li>Make Over</li><li>L'Oréal Professionnel</li><li>Beauty of Joseon</li><li>Aurevon</li><li>Aurevante</li><li>Milittle Things</li><li>EasyDew</li></ul>
+</div>
+</div>
+<div class="marquee rev">
+<div class="track">
+<ul><li>Kundal</li><li>Marshwillow</li><li>The Aesthetics</li><li>H2O Prime</li><li>Aice</li><li>CBD Professional</li><li>Satto</li><li>Yup</li></ul>
+<ul aria-hidden="true"><li>Kundal</li><li>Marshwillow</li><li>The Aesthetics</li><li>H2O Prime</li><li>Aice</li><li>CBD Professional</li><li>Satto</li><li>Yup</li></ul>
+</div>
+</div>
+<div class="pad-b"></div>
+</section>
+<section id="services" class="aura" aria-labelledby="services-title">
+<div class="wrap block">
+<div class="sec-head">
+<p class="eyebrow" data-i18n="services.eyebrow">Layanan</p>
+<h2 id="services-title" data-i18n-html="services.title">Yang bisa aku kerjakan untuk <em>brand kamu</em></h2>
+</div>
+<div class="svc-grid">
+<article class="svc">
+<span class="swatch cat-makeup" aria-hidden="true"></span>
+<p class="spec" data-i18n="s1.spec">MP4 9:16 · 15–60 detik · 1080p</p>
+<h3 data-i18n="s1.t">Video UGC</h3>
+<p class="d" data-i18n="s1.d">Video siap pakai untuk akun dan iklan brand. Termasuk konsep hook, script, syuting, editing, subtitle, dan 1x revisi.</p>
+</article>
+<article class="svc">
+<span class="swatch cat-hair" aria-hidden="true"></span>
+<p class="spec" data-i18n="s2.spec">TikTok @kertonisme + mirror Instagram</p>
+<h3 data-i18n="s2.t">Video + posting</h3>
+<p class="d" data-i18n="s2.d">Video tayang di akunku, bisa pakai keranjang kuning atau link affiliate, lengkap dengan caption dan hashtag kampanye.</p>
+</article>
+<article class="svc">
+<span class="swatch cat-skin" aria-hidden="true"></span>
+<p class="spec" data-i18n="s3.spec">1 video · 3 hook pembuka</p>
+<h3 data-i18n="s3.t">Variasi hook</h3>
+<p class="d" data-i18n="s3.d">Satu video dengan beberapa versi pembuka, supaya brand bisa A/B testing iklan.</p>
+</article>
+</div>
+<div class="addons">
+<span class="eyebrow" data-i18n="addons.label">Tambahan</span>
+<span class="pill">Raw footage</span>
+<span class="pill" data-i18n="addons.rights">Hak pakai untuk iklan</span>
+<span class="pill" data-i18n="addons.spark">Kode Spark Ads</span>
+<span class="pill">Voice-over</span>
+</div>
+<div class="svc-foot">
+<p data-i18n="services.note">Harga menyesuaikan brief dan jumlah video. Rate card aku kirim lewat DM atau email.</p>
+<a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Minta rate card</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="process-title">
+<div class="wrap block">
+<div class="sec-head">
+<p class="eyebrow" data-i18n="process.eyebrow">Alur kerja</p>
+<h2 id="process-title" data-i18n-html="process.title">Dari brief sampai <em>file final</em></h2>
+</div>
+<ol class="timeline">
+<li><span class="n">01</span><h3 data-i18n="st1.t">Brief &amp; produk</h3><p data-i18n="st1.d">Kamu kirim brief, key message, dan produk.</p></li>
+<li><span class="n">02</span><h3 data-i18n="st2.t">Konsep &amp; script</h3><p data-i18n="st2.d">Aku kirim ide hook dan script untuk kamu setujui.</p></li>
+<li><span class="n">03</span><h3 data-i18n="st3.t">Syuting &amp; editing</h3><p data-i18n="st3.d">Rekam, edit, subtitle, dan musik sesuai platform.</p></li>
+<li><span class="n">04</span><h3 data-i18n="st4.t">Revisi</h3><p data-i18n="st4.d">Satu kali revisi untuk penyesuaian.</p></li>
+<li><span class="n">05</span><h3 data-i18n="st5.t">File final</h3><p data-i18n="st5.d">MP4 9:16 resolusi tinggi, plus caption kalau diposting.</p></li>
+</ol>
+<p class="proc-time" data-i18n="process.time">Estimasi 3–5 hari kerja setelah produk diterima.</p>
+</div>
+</section>
+<section id="contact" class="contact aura" aria-labelledby="contact-title">
+<div class="wrap block">
+<div class="sec-head">
+<p class="eyebrow" data-i18n="contact.eyebrow">Kontak</p>
+<h2 id="contact-title" data-i18n-html="contact.title">Ada produk yang mau <em>di-review?</em></h2>
+<p class="sub" data-i18n="contact.sub">Kirim DM berisi nama brand, produk, dan jumlah video yang kamu butuhkan. Aku balas dengan rate card dan ide konsep.</p>
+</div>
+<div class="links">
+<a class="link-card" href="https://www.instagram.com/novita_vero/" target="_blank" rel="noopener">
+<span class="ico"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+<span class="lc"><span class="lc-label" data-i18n="contact.ig">DM Instagram</span><span class="lc-handle">@novita_vero</span></span><span class="arrow" aria-hidden="true">↗</span>
+</a>
+<a class="link-card" href="https://www.tiktok.com/@kertonisme" target="_blank" rel="noopener">
+<span class="ico"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span>
+<span class="lc"><span class="lc-label" data-i18n="contact.tt">TikTok utama</span><span class="lc-handle">@kertonisme</span></span><span class="arrow" aria-hidden="true">↗</span>
+</a>
+<a class="link-card" href="https://www.tiktok.com/@vell_ody" target="_blank" rel="noopener">
+<span class="ico"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span>
+<span class="lc"><span class="lc-label" data-i18n="contact.tt2">TikTok review beauty</span><span class="lc-handle">@vell_ody</span></span><span class="arrow" aria-hidden="true">↗</span>
+</a>
+<a class="link-card" href="https://www.youtube.com/@kertonisme" target="_blank" rel="noopener">
+<span class="ico"><i class="fa-brands fa-youtube" aria-hidden="true"></i></span>
+<span class="lc"><span class="lc-label">YouTube</span><span class="lc-handle">@kertonisme</span></span><span class="arrow" aria-hidden="true">↗</span>
+</a>
+<a class="link-card" href="https://www.facebook.com/share/1FHBg5g47v/" target="_blank" rel="noopener">
+<span class="ico"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+<span class="lc"><span class="lc-label">Facebook</span><span class="lc-handle">kertonisme</span></span><span class="arrow" aria-hidden="true">↗</span>
+</a>
+<a class="link-card" href="https://www.threads.net/@novita_vero" target="_blank" rel="noopener">
+<span class="ico"><i class="fa-brands fa-threads" aria-hidden="true"></i></span>
+<span class="lc"><span class="lc-label">Threads</span><span class="lc-handle">@novita_vero</span></span><span class="arrow" aria-hidden="true">↗</span>
+</a>
+</div>
+<div class="email-row" id="email-row" hidden>
+<span class="eyebrow">Email</span>
+<span class="addr" id="email-addr"></span>
+<button type="button" class="btn btn-ghost btn-sm" id="copy-email" data-i18n="contact.copy">Salin</button>
+</div>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<span>© 2026 Vero · Indonesia</span>
+<nav class="socials" aria-label="Social media">
+<a href="https://www.tiktok.com/@kertonisme" target="_blank" rel="noopener" aria-label="TikTok @kertonisme"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+<a href="https://www.instagram.com/novita_vero/" target="_blank" rel="noopener" aria-label="Instagram @novita_vero"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+<a href="https://www.youtube.com/@kertonisme" target="_blank" rel="noopener" aria-label="YouTube @kertonisme"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com/share/1FHBg5g47v/" target="_blank" rel="noopener" aria-label="Facebook kertonisme"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+<a href="https://www.threads.net/@novita_vero" target="_blank" rel="noopener" aria-label="Threads @novita_vero"><i class="fa-brands fa-threads" aria-hidden="true"></i></a>
+</nav>
+</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/brands.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"></script>
+<script>
+(function(){
+var CONTACT_EMAIL = "";
+var I18N = {
+id: {
+"nav.work":"Karya","nav.services":"Layanan","nav.contact":"Kontak","cta.collab":"Kerja sama",
+"hero.eyebrow":"Portfolio · Indonesia",
+"hero.title":"UGC &amp; <em>Beauty</em> Content Creator",
+"hero.sub":"Konten beauty, haircare, dan lifestyle dari kreator yang benar-benar memakai produknya. Aku tulis, rekam, dan edit sendiri, siap dipakai di akun dan iklan brand kamu.",
+"hero.cta1":"Lihat karya","hero.cta2":"Minta rate card",
+"chip.life":"Lifestyle & kuliner","chip.lang":"Indonesia + English",
+"hero.note":"Hook asli dari video brand",
+"stats.followers":"Followers TikTok","stats.likes":"Total likes akun","stats.views":"Views · 90 hari terakhir",
+"stats.er":"Engagement rate · 90 hari","stats.brands":"Brand dalam 3 bulan terakhir",
+"stats.note":"Data TikTok @kertonisme dari Metricool, 4 Agustus – 1 November 2026.",
+"about.eyebrow":"Tentang aku","about.title":"Halo, aku <em>Vero.</em>",
+"about.body1":"Aku Vero, UGC creator dari Indonesia. Videoku menjawab hal yang ingin diketahui calon pembeli: enak dipakai atau nggak, hasilnya kelihatan atau nggak, dan cocok buat siapa.",
+"p1.t":"Review dari masalah nyata","p1.d":"Kulitku acne-prone dan rambutku sering dicatok. Aku tahu rasanya mencari produk yang benar-benar berhasil.",
+"p2.t":"Terbiasa kerja dengan brief","p2.d":"Aku teliti soal guideline brand, key message, dan deadline.",
+"p3.t":"Dua bahasa","p3.d":"Script bahasa Indonesia, English, atau campuran keduanya.",
+"p4.t":"Tampil wajah atau faceless","p4.d":"Talking to camera, voice-over, atau close-up produk tanpa wajah.",
+"work.eyebrow":"Karya pilihan","work.title":"Konten yang sudah <em>tayang</em>",
+"work.sub":"Ketuk video untuk menonton di TikTok. Teks di layar diambil dari caption asli tiap video.",
+"f.all":"Semua","f.makeup":"Makeup","f.skin":"Skincare","f.hair":"Haircare","f.life":"Lifestyle & event",
+"work.watch":"Tonton di TikTok","work.top":"reach tertinggi",
+"brands.eyebrow":"Brand","brands.title":"Brand yang pernah aku <em>buatkan konten</em>",
+"services.eyebrow":"Layanan","services.title":"Yang bisa aku kerjakan untuk <em>brand kamu</em>",
+"s1.spec":"MP4 9:16 · 15–60 detik · 1080p","s1.t":"Video UGC",
+"s1.d":"Video siap pakai untuk akun dan iklan brand. Termasuk konsep hook, script, syuting, editing, subtitle, dan 1x revisi.",
+"s2.spec":"TikTok @kertonisme + mirror Instagram","s2.t":"Video + posting",
+"s2.d":"Video tayang di akunku, bisa pakai keranjang kuning atau link affiliate, lengkap dengan caption dan hashtag kampanye.",
+"s3.spec":"1 video · 3 hook pembuka","s3.t":"Variasi hook",
+"s3.d":"Satu video dengan beberapa versi pembuka, supaya brand bisa A/B testing iklan.",
+"addons.label":"Tambahan","addons.rights":"Hak pakai untuk iklan","addons.spark":"Kode Spark Ads",
+"services.note":"Harga menyesuaikan brief dan jumlah video. Rate card aku kirim lewat DM atau email.",
+"process.eyebrow":"Alur kerja","process.title":"Dari brief sampai <em>file final</em>",
+"st1.t":"Brief & produk","st1.d":"Kamu kirim brief, key message, dan produk.",
+"st2.t":"Konsep & script","st2.d":"Aku kirim ide hook dan script untuk kamu setujui.",
+"st3.t":"Syuting & editing","st3.d":"Rekam, edit, subtitle, dan musik sesuai platform.",
+"st4.t":"Revisi","st4.d":"Satu kali revisi untuk penyesuaian.",
+"st5.t":"File final","st5.d":"MP4 9:16 resolusi tinggi, plus caption kalau diposting.",
+"process.time":"Estimasi 3–5 hari kerja setelah produk diterima.",
+"contact.eyebrow":"Kontak","contact.title":"Ada produk yang mau <em>di-review?</em>",
+"contact.sub":"Kirim DM berisi nama brand, produk, dan jumlah video yang kamu butuhkan. Aku balas dengan rate card dan ide konsep.",
+"contact.ig":"DM Instagram","contact.tt":"TikTok utama","contact.tt2":"TikTok review beauty",
+"contact.copy":"Salin","contact.copied":"Tersalin"
+},
+en: {
+"nav.work":"Work","nav.services":"Services","nav.contact":"Contact","cta.collab":"Work with me",
+"hero.eyebrow":"Portfolio · Indonesia",
+"hero.title":"UGC &amp; <em>Beauty</em> Content Creator",
+"hero.sub":"Beauty, haircare and lifestyle content from a creator who actually uses the product. I write, shoot and edit every video, ready for your brand's channels and ads.",
+"hero.cta1":"See my work","hero.cta2":"Request rate card",
+"chip.life":"Lifestyle & food","chip.lang":"Indonesian + English",
+"hero.note":"Real hooks from brand videos",
+"stats.followers":"TikTok followers","stats.likes":"Total account likes","stats.views":"Views · last 90 days",
+"stats.er":"Engagement rate · 90 days","stats.brands":"Brands in the last 3 months",
+"stats.note":"TikTok @kertonisme data from Metricool, 4 August – 1 November 2026.",
+"about.eyebrow":"About","about.title":"Hi, I'm <em>Vero.</em>",
+"about.body1":"I'm Vero, a UGC creator based in Indonesia. My videos answer what a shopper wants to know: does it feel good to use, do the results show, and who is it for.",
+"p1.t":"Reviews from real problems","p1.d":"I have acne-prone skin and heat-styled hair, so I know what it's like to look for products that actually work.",
+"p2.t":"Used to working from a brief","p2.d":"I pay close attention to brand guidelines, key messages and deadlines.",
+"p3.t":"Two languages","p3.d":"Scripts in Indonesian, English, or a mix of both.",
+"p4.t":"On camera or faceless","p4.d":"Talking to camera, voice-over, or product close-ups without my face.",
+"work.eyebrow":"Selected work","work.title":"Content that's already <em>live</em>",
+"work.sub":"Tap a video to watch it on TikTok. The on-screen text comes from each video's original caption.",
+"f.all":"All","f.makeup":"Makeup","f.skin":"Skincare","f.hair":"Haircare","f.life":"Lifestyle & events",
+"work.watch":"Watch on TikTok","work.top":"highest reach",
+"brands.eyebrow":"Brands","brands.title":"Brands I've <em>made content for</em>",
+"services.eyebrow":"Services","services.title":"What I can make for <em>your brand</em>",
+"s1.spec":"MP4 9:16 · 15–60 sec · 1080p","s1.t":"UGC video",
+"s1.d":"Ready-to-use video for your brand's channels and ads. Includes hook concept, script, filming, editing, subtitles and one round of revisions.",
+"s2.spec":"TikTok @kertonisme + Instagram mirror","s2.t":"Video + posting",
+"s2.d":"The video goes live on my account, with a TikTok Shop cart or affiliate link if needed, plus the campaign caption and hashtags.",
+"s3.spec":"1 video · 3 opening hooks","s3.t":"Hook variations",
+"s3.d":"One video with several opening versions, so your team can A/B test ads.",
+"addons.label":"Add-ons","addons.rights":"Ad usage rights","addons.spark":"Spark Ads code",
+"services.note":"Pricing depends on the brief and the number of videos. I'll send my rate card by DM or email.",
+"process.eyebrow":"How we work","process.title":"From brief to <em>final file</em>",
+"st1.t":"Brief & product","st1.d":"You send the brief, key message and product.",
+"st2.t":"Concept & script","st2.d":"I send hook ideas and a script for your approval.",
+"st3.t":"Shoot & edit","st3.d":"Filming, editing, subtitles and music for the platform.",
+"st4.t":"Revision","st4.d":"One round of revisions for adjustments.",
+"st5.t":"Final file","st5.d":"High-res 9:16 MP4, plus the caption if I'm posting it.",
+"process.time":"Usually 3–5 working days after the product arrives.",
+"contact.eyebrow":"Contact","contact.title":"Got a product you'd like <em>reviewed?</em>",
+"contact.sub":"Send a DM with your brand name, the product and how many videos you need. I'll reply with my rate card and a concept idea.",
+"contact.ig":"Instagram DM","contact.tt":"Main TikTok","contact.tt2":"Beauty review TikTok",
+"contact.copy":"Copy","contact.copied":"Copied"
+}
+};
+var BASE = "https://www.tiktok.com/@kertonisme/video/";
+var WORKS = [
+{cat:"makeup", brand:"Make Over", prod:"Powerstay Matte Lip Cream", hook:"Definisi powerstay banget. Siapa sangka bakal seawet itu", fmt:{id:"Wear test",en:"Wear test"}, id:"7681520203359915271", top:"4.9K views"},
+{cat:"hair", brand:"Pantene", prod:"Hair Fall Rescue", hook:"tips rambut sehat kayak cewe pinterest", fmt:{id:"Batch 8 video dalam 1 hari",en:"Batch of 8 videos in one day"}, id:"7702761209241619719"},
+{cat:"skin", brand:"Beauty of Joseon", prod:"Green Plum Facial Wash", hook:"Pengalaman sebagai acne prone", fmt:{id:"Storytelling",en:"Storytelling"}, id:"7700956391615483154"},
+{cat:"life", brand:"CBD Professional", prod:"Citra Beauty Fair", hook:"Seru banget bisa sambil karokean sama CBD", fmt:{id:"Liputan event",en:"Event coverage"}, id:"7679755752730348818"},
+{cat:"makeup", brand:"Make Over", prod:"Powerstay Lip Glazed", hook:"Paling ga sekali seumur hidup harus cobain", fmt:{id:"Swatch & review",en:"Swatch & review"}, id:"7685981514353462536"},
+{cat:"hair", brand:"L'Oréal Professionnel", prod:"Alpha Sleek", hook:"Anti rambut frizzy seminggu ✅", fmt:{id:"Masalah → solusi",en:"Problem → solution"}, id:"7697635086262455570"},
+{cat:"skin", brand:"EasyDew", prod:"EGF Ampoule", hook:"next level life after breakout", fmt:{id:"Perawatan bekas jerawat",en:"Post-acne care"}, id:"7691553480825261320"},
+{cat:"life", brand:"Yup", prod:"Promo buku", hook:"Wishlist buku selama ini jadi bisa kebeli", fmt:{id:"Promo kode diskon",en:"Discount code promo"}, id:"7671514902678277384"},
+{cat:"hair", brand:"Aurevon", prod:"Hair Serum", hook:"Rambut rontok aku banyak berkurang selama 1 bulan ini", fmt:{id:"Hasil 1 bulan + bahan aktif",en:"1-month result + key ingredients"}, id:"7697878632718404872"},
+{cat:"skin", brand:"The Aesthetics", prod:"Moist in Jar", hook:"ya begini lah kehidupan breakout yang ga ada habisnya", fmt:{id:"Relatable POV",en:"Relatable POV"}, id:"7696103792567274760"},
+{cat:"hair", brand:"Milittle Things", prod:"Hair mask", hook:"rambut cakep ini bukan karna genetik tapi 100% krn haircare", fmt:{id:"Hair routine",en:"Hair routine"}, id:"7700547081252949255"},
+{cat:"life", brand:"Aice Indonesia", prod:"Crispy Balls Shine Muscat", hook:"luv @Aice Indonesia", fmt:{id:"Taste test",en:"Taste test"}, id:"7694088430401375495"}
+];
+var CATS = ["all","makeup","skin","hair","life"];
+var CAT_CLASS = {makeup:"cat-makeup", hair:"cat-hair", skin:"cat-skin", life:"cat-life"};
+var lang = "id", filter = "all";
+try { var saved = localStorage.getItem("vero-lang"); if (saved === "en" || saved === "id") lang = saved; } catch(e) {}
+if (location.hash === "#en" || location.hash === "#id") lang = location.hash.slice(1);
+function t(k){ var d = I18N[lang] || I18N.id; return (k in d) ? d[k] : (I18N.id[k] || k); }
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+var io = ("IntersectionObserver" in window) ? new IntersectionObserver(function(entries){
+entries.forEach(function(en){ en.target.classList.toggle("playing", en.isIntersecting); });
+}, {threshold:0.55}) : null;
+function renderFilters(){
+var box = document.getElementById("filters");
+box.innerHTML = CATS.map(function(c){
+var n = c === "all" ? WORKS.length : WORKS.filter(function(w){ return w.cat === c; }).length;
+return '<button type="button" class="chip" id="filter-' + c + '" data-cat="' + c + '" aria-pressed="' + (filter === c) + '">' +
+esc(t("f." + c)) + '<span class="count">' + n + '</span></button>';
+}).join("");
+}
+function renderWorks(){
+var grid = document.getElementById("work-grid");
+if (io) io.disconnect();
+grid.innerHTML = WORKS.filter(function(w){ return filter === "all" || w.cat === filter; }).map(function(w){
+var url = BASE + w.id;
+var badge = w.top ? '<span class="badge">' + esc(w.top) + '</span>' : '';
+return '<article class="work">' +
+'<a class="frame ' + CAT_CLASS[w.cat] + '" href="' + url + '" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">' +
+'<span class="f-top"><span class="handle"><i class="fa-brands fa-tiktok"></i>@kertonisme</span>' + badge + '</span>' +
+'<span class="play"></span>' +
+'<p class="cap"><span>' + esc(w.hook) + '</span></p>' +
+'<span class="bar"><i></i></span>' +
+'</a>' +
+'<div class="work-meta">' +
+'<p class="fmt">' + esc(w.fmt[lang] || w.fmt.id) + (w.top ? ' · ' + esc(t("work.top")) : '') + '</p>' +
+'<h3>' + esc(w.brand) + '</h3>' +
+'<p class="prod">' + esc(w.prod) + '</p>' +
+'<a class="watch" href="' + url + '" target="_blank" rel="noopener" aria-label="' + esc(t("work.watch") + " — " + w.brand) + '"><i class="fa-brands fa-tiktok" aria-hidden="true"></i>' + esc(t("work.watch")) + ' ↗</a>' +
+'</div>' +
+'</article>';
+}).join("");
+if (io) grid.querySelectorAll(".work").forEach(function(el){ io.observe(el); });
+}
+function applyLang(){
+document.documentElement.lang = lang;
+document.querySelectorAll("[data-i18n]").forEach(function(el){ el.textContent = t(el.getAttribute("data-i18n")); });
+document.querySelectorAll("[data-i18n-html]").forEach(function(el){ el.innerHTML = t(el.getAttribute("data-i18n-html")); });
+document.querySelectorAll(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+renderFilters(); renderWorks();
+}
+document.querySelector(".lang").addEventListener("click", function(e){
+var b = e.target.closest("button[data-lang]"); if (!b) return;
+lang = b.getAttribute("data-lang");
+try { localStorage.setItem("vero-lang", lang); } catch(err) {}
+applyLang();
+});
+document.getElementById("filters").addEventListener("click", function(e){
+var b = e.target.closest("button[data-cat]"); if (!b) return;
+filter = b.getAttribute("data-cat");
+renderFilters(); renderWorks();
+});
+window.addEventListener("hashchange", function(){
+if (location.hash === "#en" || location.hash === "#id") { lang = location.hash.slice(1); applyLang(); }
+});
+if (CONTACT_EMAIL) {
+var row = document.getElementById("email-row");
+var addr = document.getElementById("email-addr");
+addr.textContent = CONTACT_EMAIL;
+row.hidden = false;
+document.getElementById("copy-email").addEventListener("click", function(){
+var btn = this;
+function done(){ btn.textContent = t("contact.copied"); setTimeout(function(){ btn.textContent = t("contact.copy"); }, 1600); }
+function fallback(){ var r = document.createRange(); r.selectNodeContents(addr); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+try { navigator.clipboard.writeText(CONTACT_EMAIL).then(done, fallback); } catch(err) { fallback(); }
+});
+}
+applyLang();
+})();
+</script>
+</body>
+</html>
