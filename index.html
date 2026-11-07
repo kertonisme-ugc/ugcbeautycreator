@@ -389,6 +389,9 @@ background-size:150% 150%;background-position:0% 0%}
 @media (max-width:560px){ .links{grid-template-columns:1fr} }
 .foot{border-top:1px solid var(--line)}
 .foot .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px;padding-block:28px;font-size:14px;color:var(--muted)}
+.foot-quote{flex:1 0 100%;margin:0;display:grid;gap:8px;padding-bottom:20px;border-bottom:1px dashed var(--line)}
+.foot-quote blockquote{margin:0;max-width:34ch;font-family:var(--f-serif);font-style:italic;font-size:clamp(22px,2.8vw,30px);line-height:1.25;color:var(--ink);text-wrap:balance}
+.foot-quote figcaption{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--glaze)}
 .socials{display:flex;gap:8px}
 .socials a{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);color:var(--ink);font-size:16px;text-decoration:none;transition:background-color .2s ease,color .2s ease,transform .25s ease}
 .socials a:hover{background:var(--glaze);border-color:var(--glaze);color:var(--on-glaze);transform:translateY(-3px)}
@@ -679,7 +682,8 @@ html.js .reveal{opacity:1;transform:none;transition:none}
 </main>
 <footer class="foot">
 <div class="wrap">
-<span>© 2026 Vero · Indonesia</span>
+<figure class="foot-quote"><blockquote>“Trust God and the Universe. Everything happens at the right time.”</blockquote><figcaption>— Zen</figcaption></figure>
+<span class="foot-copy" data-i18n="foot.copy">© 2026 Vero · Indonesia. Hak cipta dilindungi.</span>
 <nav class="socials" aria-label="Social media">
 <a href="https://www.tiktok.com/@kertonisme" target="_blank" rel="noopener" aria-label="TikTok @kertonisme"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
 <a href="https://www.instagram.com/novita_vero/" target="_blank" rel="noopener" aria-label="Instagram @novita_vero"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
@@ -737,7 +741,8 @@ id: {
 "contact.eyebrow":"Kontak","contact.title":"Ada produk yang mau <em>di-review?</em>",
 "contact.sub":"Kirim DM berisi nama brand, produk, dan jumlah video yang kamu butuhkan. Aku balas dengan rate card dan ide konsep.",
 "contact.ig":"DM Instagram","contact.tt":"TikTok utama","contact.tt2":"TikTok review beauty",
-"contact.copy":"Salin","contact.copied":"Tersalin"
+"contact.copy":"Salin","contact.copied":"Tersalin",
+"foot.copy":"© 2026 Vero · Indonesia. Hak cipta dilindungi."
 },
 en: {
 "nav.work":"Work","nav.services":"Services","nav.contact":"Contact","cta.collab":"Work with me",
@@ -781,17 +786,18 @@ en: {
 "contact.eyebrow":"Contact","contact.title":"Got a product you'd like <em>reviewed?</em>",
 "contact.sub":"Send a DM with your brand name, the product and how many videos you need. I'll reply with my rate card and a concept idea.",
 "contact.ig":"Instagram DM","contact.tt":"Main TikTok","contact.tt2":"Beauty review TikTok",
-"contact.copy":"Copy","contact.copied":"Copied"
+"contact.copy":"Copy","contact.copied":"Copied",
+"foot.copy":"© 2026 Vero · Indonesia. All rights reserved."
 }
 };
 var BASE = "https://www.tiktok.com/@kertonisme/video/";
 var WORKS = [
 {cat:"makeup", brand:"Make Over", prod:"Powerstay Matte Lip Cream", hook:"Definisi powerstay banget. Siapa sangka bakal seawet itu", fmt:{id:"Wear test",en:"Wear test"}, id:"7681520203359915271", vid:"lip-tint", top:"4.9K views"},
-{cat:"hair", brand:"Pantene", prod:"Hair Fall Rescue", hook:"tips rambut sehat kayak cewe pinterest", fmt:{id:"Batch 8 video dalam 1 hari",en:"Batch of 8 videos in one day"}, id:"7702761209241619719", vid:"pantene-hair-fall-rescue"},
-{cat:"hair", brand:"Pantene", prod:"Vitamin Ampoule", hook:"", fmt:{id:"Daily hair routine",en:"Daily hair routine"}, vid:"pantene-vitamin-ampoule"},
 {cat:"skin", brand:"Beauty of Joseon", prod:"Green Plum Facial Wash", hook:"Pengalaman sebagai acne prone", fmt:{id:"Storytelling",en:"Storytelling"}, id:"7700956391615483154", vid:"boj-green-plum"},
-{cat:"life", brand:"CBD Professional", prod:"Citra Beauty Fair", hook:"Seru banget bisa sambil karokean sama CBD", fmt:{id:"Liputan event",en:"Event coverage"}, id:"7679755752730348818", vid:"cbd-beauty-fair"},
 {cat:"makeup", brand:"Make Over", prod:"Powerstay Lip Glazed", hook:"Paling ga sekali seumur hidup harus cobain", fmt:{id:"Swatch & review",en:"Swatch & review"}, id:"7685981514353462536", vid:"makeover-powerstay"},
+{cat:"hair", brand:"Pantene", prod:"Hair Fall Rescue", hook:"tips rambut sehat kayak cewe pinterest", fmt:{id:"Batch 8 video dalam 1 hari",en:"Batch of 8 videos in one day"}, id:"7702761209241619719", vid:"pantene-hair-fall-rescue"},
+{cat:"life", brand:"CBD Professional", prod:"Citra Beauty Fair", hook:"Seru banget bisa sambil karokean sama CBD", fmt:{id:"Liputan event",en:"Event coverage"}, id:"7679755752730348818", vid:"cbd-beauty-fair"},
+{cat:"hair", brand:"Pantene", prod:"Vitamin Ampoule", hook:"", fmt:{id:"Daily hair routine",en:"Daily hair routine"}, vid:"pantene-vitamin-ampoule"},
 {cat:"hair", brand:"L'Oréal Professionnel", prod:"Alpha Sleek", hook:"Anti rambut frizzy seminggu ✅", fmt:{id:"Masalah → solusi",en:"Problem → solution"}, id:"7697635086262455570", vid:"loreal-alpha-sleek"},
 {cat:"skin", brand:"EasyDew", prod:"EGF Ampoule", hook:"next level life after breakout", fmt:{id:"Perawatan bekas jerawat",en:"Post-acne care"}, id:"7691553480825261320", vid:"easydew-egf-ampoule"},
 {cat:"skin", brand:"AM to PM", prod:"Acne Spot Treatment Drying Lotion", hook:"after pake ini besoknya jerawat langsung kering dan kempes dalam semalam", fmt:{id:"Cara pakai + hasil",en:"How to use + results"}, id:"7704999113863073032", vid:"amtopm-drying-lotion"},
