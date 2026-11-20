@@ -377,7 +377,7 @@ function init(T, makeRoom) {
   /* ---------------- sections & anchors ---------------- */
   const SECS = [
     ['hero', q('.hero')], ['stats', q('.stats')], ['about', q('#about')], ['work', q('#work')], ['brands', q('.brands')],
-    ['services', q('#services')], ['process', q('section[aria-labelledby="process-title"]')], ['contact', q('#contact')], ['contact', q('.foot')]
+    ['services', q('#services')], ['process', q('section[aria-labelledby="process-title"]')], ['contact', q('#contact')], ['foot', q('.foot')]
   ].filter((s) => s[1]);
   let lastSec = 'hero';
   function activeSec() {
@@ -446,6 +446,11 @@ function init(T, makeRoom) {
       const r = l.getBoundingClientRect(); const s = clamp(r.width * 0.04, 28, 52);
       return { key: 'contact', x: r.right - s * 1.7, y: r.top + 2, s, wave: true };
     }
+    if (k === 'foot') {
+      const d = q('.foot-mark i'); if (!d) return anchorFor('contact');
+      const r = d.getBoundingClientRect(); if (r.width < 4) return anchorFor('contact');
+      return { key: 'foot', x: r.left + r.width / 2, y: r.bottom, s: clamp(r.width * 0.66, 16, 60) };
+    }
     return null;
   }
   const dockA = () => { const s = isSmall() ? 21 : 27; return { key: 'dock', x: W - s * 2.3, y: H - 8, s }; };
@@ -472,6 +477,7 @@ function init(T, makeRoom) {
     if (base === 'work') say(isSmall() ? 'Ketuk video buat suara' : 'Klik video buat nyalain suara', isSmall() ? 'Tap a video for sound' : 'Click a video for sound');
     if (base === 'brands') say('Wiii!', 'Wheee!', 1600);
     if (base === 'contact') say('DM aku ya!', 'DM me!');
+    if (base === 'foot') say('Sampai jumpa!', 'See you!');
   }
   let running = false;
   function wake() { if (!running) { running = true; prev = performance.now(); requestAnimationFrame(frame); } }
